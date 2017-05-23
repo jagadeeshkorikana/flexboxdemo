@@ -1,0 +1,53 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 9, ../sass/index.scss */
+.flexbox1 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background-color: lightgreen;
+}
+/* line 14, ../sass/index.scss */
+.flexbox1 .navright {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/* line 18, ../sass/index.scss */
+.flexbox2 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  height: 500px;
+}
+/* line 23, ../sass/index.scss */
+.flexbox2 .centercontent {
+  border: 2px solid black;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 26, ../sass/index.scss */
+.flexbox2 .centercontent .centercontent1 {
+  background-color: red;
+}
+/* line 29, ../sass/index.scss */
+.flexbox2 .centercontent .centercontent2 {
+  background-color: white;
+}
+/* line 32, ../sass/index.scss */
+.flexbox2 .centercontent .centercontent3 {
+  background-color: green;
+}
+/* line 36, ../sass/index.scss */
+.flexbox2 .rightcontent {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
