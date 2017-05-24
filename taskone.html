@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taskone</title>
+    <style>
+        .divmain{
+            background-color:green;
+        }
+        .navbar{
+            width:800px;
+            margin:auto;
+        }
+        .navleft{
+            float:left;
+            color:white;
+            font-weight:bold;
+        }
+        .navright{
+            float:right;
+        }
+        .navrightssymbol{
+            color:white;
+            font-style: oblique;
+            font-weight:bold;
+        }
+        .content{
+            margin:auto;
+            width:800px;
+            background-color:green;
+        }
+        .contentleft{
+            float:left;
+            width:150px;
+            margin-left:10px;
+            margin-top:10px;
+            height:700px;
+            background-color:white;
+            display:inline-block;
+        }
+        .contentcenter{
+            margin:auto;
+            margin-top:10px;
+            display:inline-block;
+            margin-right: 10px;
+            margin-left:10px;
+        }
+        .contentcenter1{
+            height:200px;
+            width:460px;
+            background-color:white;
+        }
+        .contentcenter2{
+            height:200px;
+            width:460px;
+            background-color:white;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .contentcenter3{
+            height:200px;
+            width:460px;
+            background-color:white;
+        }
+        .contentright{
+            float:right;
+            height:700px;
+            width:150px;
+            margin-right:10px;
+            margin-top:10px;
+            background-color:white;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+         <div>   
+            <div class="divmain">
+                <div class="navbar">
+                    <span class="navleft">Facebook</span><!--float left not req-->
+                    <span class="navright">
+                        <span class="navrightssymbol">F</span> <!--if 20px?-->
+                        <span class="navrightssymbol">M</span> <!--removed border:1px solid red;-->
+                        <span class="navrightssymbol">N</span>
+                    </span>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <div class="contentleft">LeftContent</div>
+                    <div class="contentcenter">
+                        <div class="contentcenter1">CenterContent1</div>
+                        <div class="contentcenter2">CenterContent2</div>
+                        <div class="contentcenter3">CenterContent3</div>
+                    </div>
+                    <div class="contentright">RightContent</div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
