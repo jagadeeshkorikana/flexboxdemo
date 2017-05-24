@@ -43,7 +43,7 @@ background-color: lightgreen;
 
 .flex-container{
     @include display-flex;
-    @include justify-content(space-between);
+    @include justify-content(space-around);
     padding: 4px;
     background-color: lightgreen;
     .flex-item{
@@ -54,6 +54,26 @@ background-color: lightgreen;
 }
 
 .flex-content{
-
+    @include display-flex;
+    @include justify-content(center);
     
+    background-color: gray;
+    .content-item{
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+    .content-itemmid{
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        .miditems{
+            @include flex-direction(column);
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+    }
 }

@@ -55,8 +55,8 @@
 .flex-container {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   padding: 4px;
   background-color: lightgreen;
 }
@@ -65,4 +65,35 @@
   width: 100px;
   height: 100px;
   background-color: tomato;
+}
+
+/* line 56, ../sass/index.scss */
+.flex-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: gray;
+}
+/* line 61, ../sass/index.scss */
+.flex-content .content-item {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+/* line 67, ../sass/index.scss */
+.flex-content .content-itemmid {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+/* line 72, ../sass/index.scss */
+.flex-content .content-itemmid .miditems {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  background-color: white;
 }
