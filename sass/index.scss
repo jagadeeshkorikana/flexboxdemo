@@ -9,31 +9,51 @@
 .flexbox1{
 @include display-flex;
 @include flex-direction(row);
-@include justify-content(space-between);
-background-color: lightgreen;
-    .navright{
-        @include justify-content(flex-end);
+background-color: green;
+    .navbar{
+        background-color: blue;
+        @include justify-content(space-between);
     }
+    
 }
 .flexbox2{
 @include display-flex;
 @include flex-direction(row);
 @include justify-content(space-around);
-height: 500px;
+background-color: lightgreen;
+
     .centercontent{
-        border: 2px solid black;
+        border: 2px solid white;
         @include flex-direction(column);
         .centercontent1{
-            background-color: red;
+            background-color:black;
         }
         .centercontent2{
-            background-color: white;
+            background-color:black;
         }
         .centercontent3{
-            background-color: green;
+            background-color: black;
         }
     }
     .rightcontent{
         @include justify-content(flex-end);
     }
+}
+
+
+.flex-container{
+    @include display-flex;
+    @include justify-content(space-between);
+    padding: 4px;
+    background-color: lightgreen;
+    .flex-item{
+        width: 100px;
+        height:100px;
+        background-color: tomato;
+    }
+}
+
+.flex-content{
+
+    
 }

@@ -8,17 +8,16 @@
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  background-color: green;
+}
+/* line 13, ../sass/index.scss */
+.flexbox1 .navbar {
+  background-color: blue;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  background-color: lightgreen;
-}
-/* line 14, ../sass/index.scss */
-.flexbox1 .navright {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
 }
 
-/* line 18, ../sass/index.scss */
+/* line 19, ../sass/index.scss */
 .flexbox2 {
   display: -webkit-flex;
   display: flex;
@@ -26,28 +25,44 @@
   flex-direction: row;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  height: 500px;
+  background-color: lightgreen;
 }
-/* line 23, ../sass/index.scss */
+/* line 25, ../sass/index.scss */
 .flexbox2 .centercontent {
-  border: 2px solid black;
+  border: 2px solid white;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 26, ../sass/index.scss */
+/* line 28, ../sass/index.scss */
 .flexbox2 .centercontent .centercontent1 {
-  background-color: red;
+  background-color: black;
 }
-/* line 29, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 .flexbox2 .centercontent .centercontent2 {
-  background-color: white;
+  background-color: black;
 }
-/* line 32, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 .flexbox2 .centercontent .centercontent3 {
-  background-color: green;
+  background-color: black;
 }
-/* line 36, ../sass/index.scss */
+/* line 38, ../sass/index.scss */
 .flexbox2 .rightcontent {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
+}
+
+/* line 44, ../sass/index.scss */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 4px;
+  background-color: lightgreen;
+}
+/* line 49, ../sass/index.scss */
+.flex-container .flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
 }
