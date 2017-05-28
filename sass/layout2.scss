@@ -1,0 +1,71 @@
+@import "compass/reset";
+@import "compass/css3";
+.navdiv{
+    background-color:gray;
+    height: 100px;
+    width: 800PX;
+    margin: auto;
+}
+.navbar{
+    @include display-flex;
+    @include justify-content(space-between);
+    margin: auto;
+    background-color: red;
+    width: 800px;
+    height: 50px;
+    .navitem{
+        cursor: pointer;
+        @include flex-grow(1);
+        border: 1px solid green;
+    }
+}
+
+.contentdiv{
+    @include display-flex;
+    @include justify-content(space-between);
+    margin: auto;
+    width: 800px;
+    .leftdiv{
+        @include display-flex;
+        @include justify-content(flex-start);
+        @include flex-grow(1);
+        .leftl{
+            margin: 10px;
+            .leftlitem{
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                border: 3px solid blue;
+                
+            }
+        }
+        .leftr{
+            margin: 10px;
+            .leftritem{
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                border: 3px solid blue;
+            }
+        }
+        .leftrr{
+            margin: 10px;
+            .leftrritem{
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                border: 3px solid blue;
+            }
+        }
+       
+    }
+    .rightdiv{
+        background-color:yellow;
+        @include flex-grow(1);
+        cursor: pointer;
+        .rightcitem{
+            height: 30px;
+            border: 2px solid black;
+        }
+    }
+}
